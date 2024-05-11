@@ -1,0 +1,56 @@
+{
+  "name": "@easy-chat/chat-client",
+  "version": "0.0.1",
+  "description": "Chat Client for easy chat node js library",
+  "author": "Brian Job Okello <63491479+BrianPollar@users.noreply.github.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/chat-client/src/easy-chat-client.js",
+  "types": "lib/chat-client/src/easy-chat-client.d.ts",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianPollar/easy-chat-client.git"
+  },
+  "keywords": [
+    "chat",
+    "chat-node",
+    "easy-chat",
+    "easy-chat-server"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "compileLib": "rm -rf ./lib && tsc",
+    "publishLib": "npm publish",
+    "test:vite": "vitest",
+    "lint": "eslint . --ext .ts",
+    "versionLib": "npm version"
+  },
+  "peerDependencies": {
+    "rxjs": "^7.5.0",
+    "socket.io-client": "^4.5.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^39.6.9",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "happy-dom": "^9.20.3",
+    "socket.io": "^4.7.0",
+    "typescript": "^4.9.4",
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.0",
+    "socket.io-client": "^4.5.3"
+  }
+}
